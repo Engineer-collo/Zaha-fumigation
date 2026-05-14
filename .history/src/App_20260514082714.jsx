@@ -346,29 +346,30 @@ export default function ZahaFumigationWebsite() {
 
       {/* Services */}
       <section id="services" className="py-24 bg-white">
-      <div className="grid md:grid-cols-3 gap-8">
-  {services.map((service, index) => (
-    <div
-      key={index}
-      className="bg-gray-50 overflow-hidden hover:-translate-y-2 transition duration-300 rounded-3xl shadow-lg border border-gray-100"
-    >
-      <img
-        src={service.image}
-        alt={service.title}
-        className="w-full h-72 object-cover"      />
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-green-800 mb-4">
+              Our Services
+            </h2>
 
-      <div className="p-8">
-        <h3 className="text-2xl font-bold mb-4 text-green-800">
-          {service.title}
-        </h3>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Professional pest management solutions tailored for homes and businesses.
+            </p>
+          </div>
 
-        <p className="leading-relaxed text-gray-600">
-          {service.description}
-        </p>
-      </div>
-    </div>
-  ))}
-</div>      </section>
+          <div className="grid md:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="bg-gray-50 hover:bg-green-700 hover:text-white transition duration-300 rounded-3xl p-8 shadow-md"
+              >
+                <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
+                <p className="leading-relaxed">{service.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
 {/* Testimonials */}
 <section id="testimonials" className="py-24 bg-gray-100">

@@ -16,41 +16,36 @@ export default function ZahaFumigationWebsite() {
   const services = [
     {
       title: "Residential Fumigation",
-      image: "/service-home.png",
       description:
         "Protect your home from bedbugs, cockroaches, termites, rodents, and other harmful pests."
     },
     {
       title: "Office & Commercial Pest Control",
-      image: "/service-office.png",
       description:
         "Professional pest management solutions for offices, hotels, warehouses, and businesses."
     },
     {
       title: "Termite Control",
-      image: "/service-termite.png",
       description:
         "Advanced termite treatment solutions that protect your property and furniture."
     },
     {
       title: "Rodent Control",
-      image: "/service-rodent.png",
       description:
         "Safe and effective elimination of rats and mice from homes and workplaces."
     },
     {
       title: "Mosquito & Fly Control",
-      image: "/service-mosquito.png",
       description:
         "Reduce disease-causing insects with professional mosquito and fly treatment."
     },
     {
       title: "Sanitization Services",
-      image: "/service-sanitize.png",
       description:
         "Deep sanitization and disinfection services for healthier living and working spaces."
     }
   ];
+
   const testimonials = [
     {
       name: "Brian Otieno",
@@ -126,53 +121,13 @@ export default function ZahaFumigationWebsite() {
   </div>
 </div>
           <div className="hidden md:flex gap-8 font-medium items-center">
-          <a
-  href="#home"
-  onClick={() => setMobileMenu(false)}
-  className="block"
->
-  Home
-</a>
+            <a href="#home" className="hover:text-green-700 transition">Home</a>
+            <a href="#about" className="hover:text-green-700 transition">About</a>
+            <a href="#services" className="hover:text-green-700 transition">Services</a>
+            <a href="#testimonials" className="hover:text-green-700 transition">Testimonials</a>
+            <a href="#faq" className="hover:text-green-700 transition">FAQs</a>
+            <a href="#contact" className="hover:text-green-700 transition">Contact</a>
 
-<a
-  href="#about"
-  onClick={() => setMobileMenu(false)}
-  className="block"
->
-  About
-</a>
-
-<a
-  href="#services"
-  onClick={() => setMobileMenu(false)}
-  className="block"
->
-  Services
-</a>
-
-<a
-  href="#testimonials"
-  onClick={() => setMobileMenu(false)}
-  className="block"
->
-  Testimonials
-</a>
-
-<a
-  href="#faq"
-  onClick={() => setMobileMenu(false)}
-  className="block"
->
-  FAQs
-</a>
-
-<a
-  href="#contact"
-  onClick={() => setMobileMenu(false)}
-  className="block"
->
-  Contact
-</a>
             <a
               href="#contact"
               className="bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-xl transition font-semibold"
@@ -346,29 +301,30 @@ export default function ZahaFumigationWebsite() {
 
       {/* Services */}
       <section id="services" className="py-24 bg-white">
-      <div className="grid md:grid-cols-3 gap-8">
-  {services.map((service, index) => (
-    <div
-      key={index}
-      className="bg-gray-50 overflow-hidden hover:-translate-y-2 transition duration-300 rounded-3xl shadow-lg border border-gray-100"
-    >
-      <img
-        src={service.image}
-        alt={service.title}
-        className="w-full h-72 object-cover"      />
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-green-800 mb-4">
+              Our Services
+            </h2>
 
-      <div className="p-8">
-        <h3 className="text-2xl font-bold mb-4 text-green-800">
-          {service.title}
-        </h3>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Professional pest management solutions tailored for homes and businesses.
+            </p>
+          </div>
 
-        <p className="leading-relaxed text-gray-600">
-          {service.description}
-        </p>
-      </div>
-    </div>
-  ))}
-</div>      </section>
+          <div className="grid md:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="bg-gray-50 hover:bg-green-700 hover:text-white transition duration-300 rounded-3xl p-8 shadow-md"
+              >
+                <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
+                <p className="leading-relaxed">{service.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
 {/* Testimonials */}
 <section id="testimonials" className="py-24 bg-gray-100">

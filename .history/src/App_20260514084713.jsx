@@ -355,7 +355,7 @@ export default function ZahaFumigationWebsite() {
       <img
         src={service.image}
         alt={service.title}
-        className="w-full h-72 object-cover"      />
+        className="w-full h-80 object-cover"      />
 
       <div className="p-8">
         <h3 className="text-2xl font-bold mb-4 text-green-800">
