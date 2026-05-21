@@ -1096,6 +1096,12 @@ return (
       {/* Floating Call Button */}
       <a href="tel:0769095309" className="fixed bottom-28 right-6 z-50 bg-blue-700 hover:bg-blue-800 text-white w-16 h-16 rounded-full shadow-2xl flex items-center justify-center text-3xl">📞</a>
 
+      Social Links
+      <div className="fixed left-6 bottom-6 z-50 flex flex-col gap-4">
+        <a href="https://wa.me/254769095309" target="_blank" className="bg-green-600 text-white px-4 py-3 rounded-full shadow-xl font-bold">WhatsApp</a>
+        <a href="#" className="bg-blue-700 text-white px-4 py-3 rounded-full shadow-xl font-bold">Facebook</a>
+        <a href="#" className="bg-black text-white px-4 py-3 rounded-full shadow-xl font-bold">TikTok</a>
+      </div>
 
       {/* Floating WhatsApp Button */}
       <a

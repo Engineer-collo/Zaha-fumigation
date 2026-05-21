@@ -273,18 +273,11 @@ return (
         id="home"
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
       >
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
+        <img
+          src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1600&auto=format&fit=crop"
+          alt="Cleaning Services"
           className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source
-            src="https://cdn.coverr.co/videos/coverr-cleaning-a-modern-kitchen-1560583876547?download=1080p"
-            type="video/mp4"
-          />
-        </video>
+        />
 
         <div className="absolute inset-0 bg-black/55"></div>
 
@@ -477,59 +470,6 @@ return (
           >
             Book via WhatsApp
           </a>
-        </div>
-      </section>
-
-      {/* Before & After Gallery */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-green-700 mb-5">
-              Before & After Results
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              'https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1200&auto=format&fit=crop',
-              'https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop',
-              'https://images.unsplash.com/photo-1493666438817-866a91353ca9?q=80&w=1200&auto=format&fit=crop',
-            ].map((img, index) => (
-              <div key={index} className="rounded-3xl overflow-hidden shadow-2xl group relative">
-                <img src={img} alt="Before and After" className="w-full h-80 object-cover group-hover:scale-110 transition duration-500" />
-                <div className="absolute inset-0 bg-black/40 flex items-end p-6">
-                  <h3 className="text-2xl font-black text-white">Amazing Results</h3>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing */}
-      <section className="py-24 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-blue-700 mb-5">
-              Pricing Packages
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {['Basic Package', 'Premium Package', 'Fumigation Package'].map((pkg, index) => (
-              <div key={index} className="bg-white rounded-3xl shadow-2xl p-8 hover:-translate-y-2 transition">
-                <h3 className="text-3xl font-black mb-5">{pkg}</h3>
-                <div className="space-y-3 mb-8">
-                  <p>✓ Professional Cleaning</p>
-                  <p>✓ Sanitization</p>
-                  <p>✓ Affordable Pricing</p>
-                </div>
-                <a href="https://wa.me/254769095309" target="_blank" className="inline-block bg-green-600 text-white px-6 py-3 rounded-full font-bold">
-                  Book Package
-                </a>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -773,54 +713,6 @@ return (
         </div>
       </section>
 
-      {/* Pest Types */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-red-600 mb-5">
-              Common Pests We Eliminate
-            </h2>
-          </div>
-
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {['Bedbugs', 'Cockroaches', 'Mosquitoes', 'Termites', 'Ants', 'Rodents'].map((pest, index) => (
-              <div key={index} className="bg-gray-100 rounded-3xl p-8 shadow-lg text-center hover:-translate-y-2 transition">
-                <h3 className="text-2xl font-black text-gray-800 mb-3">{pest}</h3>
-                <p className="text-gray-600">Professional treatment and prevention services available.</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Emergency Pest Alert */}
-      <section className="py-20 bg-red-600 text-white">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-black mb-6">Seeing Pests Around Your Home or Office?</h2>
-          <a href="https://wa.me/254769095309" target="_blank" className="bg-white text-red-600 px-8 py-4 rounded-full text-xl font-black">Get Emergency Help</a>
-        </div>
-      </section>
-
-      {/* Blog */}
-      <section className="py-24 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-green-700 mb-5">Cleaning & Pest Control Tips</h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {['Signs Your Home Needs Fumigation', 'Deep Cleaning Benefits', 'Prevent Cockroach Infestation'].map((post, index) => (
-              <div key={index} className="bg-white rounded-3xl shadow-xl overflow-hidden hover:-translate-y-2 transition">
-                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1200&auto=format&fit=crop" alt="Blog" className="w-full h-56 object-cover" />
-                <div className="p-6">
-                  <h3 className="text-2xl font-black mb-4">{post}</h3>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* FAQs */}
       <section className="py-24 bg-gray-100">
         <div className="max-w-5xl mx-auto px-6">
@@ -973,19 +865,6 @@ return (
             </p>
 
             <div className="space-y-5 text-lg">
-              <div className="bg-white shadow-lg rounded-2xl p-5 border-l-4 border-red-600">
-                <h3 className="font-bold text-red-600">Company Profile</h3>
-                <a href="/zaha-company-profile.pdf" download className="inline-block mt-3 bg-red-600 text-white px-5 py-2 rounded-full font-semibold">Download PDF</a>
-              </div>
-
-              <div className="bg-white shadow-lg rounded-2xl p-5 border-l-4 border-green-600">
-                <h3 className="font-bold text-green-700">Certified & Trusted</h3>
-                <div className="flex flex-wrap gap-3 mt-3">
-                  <span className="bg-green-100 text-green-700 px-4 py-2 rounded-full font-semibold">Licensed</span>
-                  <span className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-semibold">Eco Friendly</span>
-                  <span className="bg-red-100 text-red-600 px-4 py-2 rounded-full font-semibold">Safe Chemicals</span>
-                </div>
-              </div>
               <div className="bg-white shadow-lg rounded-2xl p-5 border-l-4 border-green-600">
                 <h3 className="font-bold text-green-700">Phone Number</h3>
                 <p>0769095309</p>
@@ -1079,33 +958,6 @@ return (
           </p>
         </div>
       </footer>
-
-      {/* Google Map */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-10">
-            <h2 className="text-4xl font-black text-blue-700">Find Us</h2>
-          </div>
-
-          <div className="rounded-3xl overflow-hidden shadow-2xl">
-            <iframe title="Google Map" src="https://maps.google.com/maps?q=Nairobi&t=&z=13&ie=UTF8&iwloc=&output=embed" className="w-full h-[500px] border-0" allowFullScreen loading="lazy"></iframe>
-          </div>
-        </div>
-      </section>
-
-      {/* Floating Call Button */}
-      <a href="tel:0769095309" className="fixed bottom-28 right-6 z-50 bg-blue-700 hover:bg-blue-800 text-white w-16 h-16 rounded-full shadow-2xl flex items-center justify-center text-3xl">📞</a>
-
-
-      {/* Floating WhatsApp Button */}
-      <a
-        href="https://wa.me/254769095309"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 text-white w-16 h-16 rounded-full shadow-2xl flex items-center justify-center text-3xl animate-bounce"
-      >
-        💬
-      </a>
     </div>
   )
 }
