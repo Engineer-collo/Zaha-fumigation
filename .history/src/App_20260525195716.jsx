@@ -116,7 +116,7 @@ export default function App() {
     {
       title: 'Outdoor Cleaning (Cabro, Mazeras)',
       image:
-        'gabro-cleaning.png',
+        '',
       danger:
         'Outdoor surfaces accumulate mud, algae, stains, and slippery dirt.',
       need:
@@ -543,7 +543,7 @@ return (
       </section>
 
       {/* Before & After Gallery */}
-      {/* <section className="py-24 bg-white">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-green-700 mb-5">
@@ -566,7 +566,7 @@ return (
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Pricing */}
       {/* <section className="py-24 bg-gray-100">
@@ -662,7 +662,7 @@ return (
       </section>
 
       {/* Service Areas */}
-      {/* <section className="py-24 bg-gray-100">
+      <section className="py-24 bg-gray-100">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-black text-blue-700 mb-6">
@@ -703,7 +703,7 @@ return (
             />
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Why Choose Us */}
       <section className="py-24 bg-green-700 text-white">
@@ -835,72 +835,25 @@ return (
         </div>
       </section>
 
-{/* Pest Types */}
-<section className="py-24 bg-white">
-  <div className="max-w-7xl mx-auto px-6">
-    <div className="text-center mb-16">
-      <h2 className="text-4xl md:text-5xl font-black text-red-600 mb-5">
-        Common Pests We Eliminate
-      </h2>
-    </div>
+      {/* Pest Types */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-black text-red-600 mb-5">
+              Common Pests We Eliminate
+            </h2>
+          </div>
 
-    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-      {[
-        {
-          name: "Bedbugs",
-          image:
-            "bedbug.png",
-        },
-        {
-          name: "Cockroaches",
-          image:
-            "cocroach.png",
-        },
-        {
-          name: "Mosquitoes",
-          image:
-            "mosquito.png",
-        },
-        {
-          name: "Termites",
-          image:
-            "termite.png",
-        },
-        {
-          name: "Ants",
-          image:
-            "ant.png",
-        },
-        {
-          name: "Rodents",
-          image:
-            "rodent.png",
-        },
-      ].map((pest, index) => (
-        <div
-          key={index}
-          className="bg-gray-100 rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300"
-        >
-          <img
-            src={pest.image}
-            alt={pest.name}
-            className="w-full h-56 object-cover"
-          />
-
-          <div className="p-8 text-center">
-            <h3 className="text-2xl font-black text-gray-800 mb-3">
-              {pest.name}
-            </h3>
-
-            <p className="text-gray-600">
-              Professional treatment and prevention services available.
-            </p>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {['Bedbugs', 'Cockroaches', 'Mosquitoes', 'Termites', 'Ants', 'Rodents'].map((pest, index) => (
+              <div key={index} className="bg-gray-100 rounded-3xl p-8 shadow-lg text-center hover:-translate-y-2 transition">
+                <h3 className="text-2xl font-black text-gray-800 mb-3">{pest}</h3>
+                <p className="text-gray-600">Professional treatment and prevention services available.</p>
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Emergency Pest Alert */}
       <section className="py-20 bg-red-600 text-white">
@@ -911,7 +864,7 @@ return (
       </section>
 
       {/* Blog */}
-      {/* <section className="py-24 bg-gray-100">
+      <section className="py-24 bg-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-green-700 mb-5">Cleaning & Pest Control Tips</h2>
@@ -928,7 +881,7 @@ return (
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* FAQs */}
       <section className="py-24 bg-gray-100">

@@ -6,7 +6,7 @@ export default function App() {
     {
       title: 'Sofa Cleaning',
       image:
-        'sofa-cleaning.png',
+        'https://images.unsplash.com/photo-1493666438817-866a91353ca9?q=80&w=1200&auto=format&fit=crop',
       danger:
         'Dirty sofas accumulate dust, bacteria, allergens, and unpleasant odors that can affect indoor air quality and health.',
       need:
@@ -17,7 +17,7 @@ export default function App() {
     {
       title: 'Dining Seats Cleaning',
       image:
-        'diningset-cleaning.png',
+        'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop',
       danger:
         'Dining seats collect food stains, bacteria, and hidden dirt that may cause bad smells and hygiene issues.',
       need:
@@ -28,7 +28,7 @@ export default function App() {
     {
       title: 'Carpet Cleaning',
       image:
-        'carpet-cleaning.png',
+        'https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop',
       danger:
         'Carpets trap dust mites, allergens, bacteria, and moisture which can lead to respiratory problems.',
       need:
@@ -39,7 +39,7 @@ export default function App() {
     {
       title: 'Mattress Cleaning',
       image:
-        'matress-cleaning.png',
+        'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop',
       danger:
         'Mattresses can contain sweat, dead skin, dust mites, and bacteria that affect sleep quality and health.',
       need:
@@ -50,7 +50,7 @@ export default function App() {
     {
       title: 'Car Seats & Interior Detailing',
       image:
-        'car.png',
+        'https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop',
       danger:
         'Vehicle interiors collect dust, germs, stains, and odors over time.',
       need:
@@ -61,7 +61,7 @@ export default function App() {
     {
       title: 'Office Cleaning',
       image:
-        'office-cleaning.png',
+        'https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop',
       danger:
         'Dirty offices reduce productivity and can spread bacteria among employees.',
       need:
@@ -72,7 +72,7 @@ export default function App() {
     {
       title: 'Deep House Cleaning',
       image:
-        'house-cleaning.png',
+        'https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1200&auto=format&fit=crop',
       danger:
         'Hidden dirt and bacteria accumulate in hard-to-reach areas of homes.',
       need:
@@ -83,7 +83,7 @@ export default function App() {
     {
       title: 'Move-In / Move-Out Cleaning',
       image:
-        'movement.png',
+        'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop',
       danger:
         'Moving spaces may contain dust, stains, pests, and leftover waste.',
       need:
@@ -105,7 +105,7 @@ export default function App() {
     {
       title: 'Post-Renovation Cleaning',
       image:
-        'post-renovation.png',
+        'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop',
       danger:
         'Renovation work leaves behind dust, odors, and hazardous particles.',
       need:
@@ -116,7 +116,7 @@ export default function App() {
     {
       title: 'Outdoor Cleaning (Cabro, Mazeras)',
       image:
-        'gabro-cleaning.png',
+        'https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1200&auto=format&fit=crop',
       danger:
         'Outdoor surfaces accumulate mud, algae, stains, and slippery dirt.',
       need:
@@ -268,54 +268,81 @@ return (
         )}
       </nav>
 
-      {/* Hero */}
-      <section
-        id="home"
-        className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      >
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
+{/* Hero */}
+<section
+  id="home"
+  className="relative min-h-screen flex items-center overflow-hidden pt-28"
+>
+  {/* Background Video */}
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="absolute inset-0 w-full h-full object-cover"
+  >
+    <source
+      src="https://cdn.coverr.co/videos/coverr-cleaning-a-modern-kitchen-1560583876547?download=1080p"
+      type="video/mp4"
+    />
+  </video>
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/60"></div>
+
+  <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center w-full">
+    
+    {/* Left Content */}
+    <div className="text-white">
+      <h1 className="text-4xl md:text-7xl font-black leading-tight mb-6">
+        Professional Cleaning & Fumigation Services
+      </h1>
+
+      <p className="text-lg md:text-2xl mb-8 text-gray-200 leading-relaxed">
+        Are you looking for quality professional cleaning services?
+        Look no further... We’re just a call away.
+      </p>
+
+      <div className="flex flex-col sm:flex-row gap-5">
+        <a
+          href="tel:0769095309"
+          className="bg-green-600 hover:bg-green-700 px-8 py-4 rounded-full font-bold text-lg shadow-xl transition text-center"
         >
-          <source
-            src="https://cdn.coverr.co/videos/coverr-cleaning-a-modern-kitchen-1560583876547?download=1080p"
-            type="video/mp4"
-          />
-        </video>
+          Call Us Today
+        </a>
 
-        <div className="absolute inset-0 bg-black/55"></div>
+        <a
+          href="https://wa.me/254769095309"
+          target="_blank"
+          className="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-full font-bold text-lg shadow-xl transition text-center"
+        >
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
 
-        <div className="relative z-10 max-w-5xl text-center px-6 text-white">
-          <h1 className="text-4xl md:text-7xl font-black leading-tight mb-6">
-            Professional Cleaning & Fumigation Services
-          </h1>
+    {/* Right Hero Image */}
+    <div className="hidden lg:flex justify-center">
+      <div className="relative">
+        <img
+          src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1400&auto=format&fit=crop"
+          alt="ZAHA Cleaning Team"
+          className="w-[550px] h-[650px] object-cover rounded-[40px] shadow-2xl border-4 border-white/20"
+        />
 
-          <p className="text-lg md:text-2xl mb-8 text-gray-200 leading-relaxed">
-            Are you looking for quality professional cleaning services? Look no
-            further... We’re just a call away.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-5 justify-center">
-            <a
-              href="tel:0769095309"
-              className="bg-green-600 hover:bg-green-700 px-8 py-4 rounded-full font-bold text-lg shadow-xl transition"
-            >
-              Call Us Today
-            </a>
-
-            <a
-              href="https://wa.me/254769095309"
-              target="_blank"
-              className="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-full font-bold text-lg shadow-xl transition"
-            >
-              WhatsApp Us
-            </a>
-          </div>
+        <div className="absolute -bottom-6 -left-6 bg-white text-gray-800 rounded-3xl shadow-2xl p-6">
+          <h3 className="text-3xl font-black text-green-700">500+</h3>
+          <p className="font-semibold">Happy Clients</p>
         </div>
-      </section>
+
+        <div className="absolute -top-6 -right-6 bg-red-600 text-white rounded-3xl shadow-2xl p-6">
+          <h3 className="text-3xl font-black">24/7</h3>
+          <p className="font-semibold">Support</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* About */}
       <section id="about" className="py-24 bg-gray-100">
@@ -457,68 +484,6 @@ return (
         </div>
       </section>
 
-      {/* Our Gallery */}
-<section className="py-24 bg-gray-100">
-  <div className="max-w-7xl mx-auto px-6">
-    
-    <div className="text-center mb-16">
-      <h2 className="text-4xl md:text-5xl font-black text-green-700 mb-5">
-        Our Services Gallery
-      </h2>
-
-      <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-        Explore some of our professional cleaning, fumigation,
-        sanitization, and deep cleaning services.
-      </p>
-    </div>
-
-    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
-      {[
-        'service1.png',
-        'service2.png',
-        'service3.png',
-        'service4.png',
-        'service5.png',
-        'service6.png',
-        'service7.png',
-        'service8.png',
-        'service9.png',
-        'service10.png',
-        'service11.png',
-        'service12.png',
-        'service13.png',
-        'service14.png',
-        'service15.png',
-
-      ].map((img, index) => (
-        <div
-          key={index}
-          className="group relative overflow-hidden rounded-3xl shadow-2xl"
-        >
-          <img
-            src={img}
-            alt="ZAHA Gallery"
-            className="w-full h-72 object-cover group-hover:scale-110 transition duration-700"
-          />
-
-          <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
-            <div className="text-center text-white px-4">
-              <h3 className="text-2xl font-black mb-2">
-                ZAHA Cleaning
-              </h3>
-              <p className="text-sm">
-                Professional Cleaning & Fumigation
-              </p>
-            </div>
-          </div>
-        </div>
-      ))}
-
-    </div>
-  </div>
-</section>
-
       {/* Emergency CTA */}
       <section className="py-16 bg-red-600 text-white">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
@@ -543,7 +508,7 @@ return (
       </section>
 
       {/* Before & After Gallery */}
-      {/* <section className="py-24 bg-white">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-green-700 mb-5">
@@ -566,10 +531,10 @@ return (
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Pricing */}
-      {/* <section className="py-24 bg-gray-100">
+      <section className="py-24 bg-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-blue-700 mb-5">
@@ -593,7 +558,7 @@ return (
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Process */}
       <section className="py-24 bg-white">
@@ -662,7 +627,7 @@ return (
       </section>
 
       {/* Service Areas */}
-      {/* <section className="py-24 bg-gray-100">
+      <section className="py-24 bg-gray-100">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-black text-blue-700 mb-6">
@@ -703,7 +668,7 @@ return (
             />
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Why Choose Us */}
       <section className="py-24 bg-green-700 text-white">
@@ -835,72 +800,25 @@ return (
         </div>
       </section>
 
-{/* Pest Types */}
-<section className="py-24 bg-white">
-  <div className="max-w-7xl mx-auto px-6">
-    <div className="text-center mb-16">
-      <h2 className="text-4xl md:text-5xl font-black text-red-600 mb-5">
-        Common Pests We Eliminate
-      </h2>
-    </div>
+      {/* Pest Types */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-black text-red-600 mb-5">
+              Common Pests We Eliminate
+            </h2>
+          </div>
 
-    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-      {[
-        {
-          name: "Bedbugs",
-          image:
-            "bedbug.png",
-        },
-        {
-          name: "Cockroaches",
-          image:
-            "cocroach.png",
-        },
-        {
-          name: "Mosquitoes",
-          image:
-            "mosquito.png",
-        },
-        {
-          name: "Termites",
-          image:
-            "termite.png",
-        },
-        {
-          name: "Ants",
-          image:
-            "ant.png",
-        },
-        {
-          name: "Rodents",
-          image:
-            "rodent.png",
-        },
-      ].map((pest, index) => (
-        <div
-          key={index}
-          className="bg-gray-100 rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300"
-        >
-          <img
-            src={pest.image}
-            alt={pest.name}
-            className="w-full h-56 object-cover"
-          />
-
-          <div className="p-8 text-center">
-            <h3 className="text-2xl font-black text-gray-800 mb-3">
-              {pest.name}
-            </h3>
-
-            <p className="text-gray-600">
-              Professional treatment and prevention services available.
-            </p>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {['Bedbugs', 'Cockroaches', 'Mosquitoes', 'Termites', 'Ants', 'Rodents'].map((pest, index) => (
+              <div key={index} className="bg-gray-100 rounded-3xl p-8 shadow-lg text-center hover:-translate-y-2 transition">
+                <h3 className="text-2xl font-black text-gray-800 mb-3">{pest}</h3>
+                <p className="text-gray-600">Professional treatment and prevention services available.</p>
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Emergency Pest Alert */}
       <section className="py-20 bg-red-600 text-white">
@@ -911,7 +829,7 @@ return (
       </section>
 
       {/* Blog */}
-      {/* <section className="py-24 bg-gray-100">
+      <section className="py-24 bg-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-green-700 mb-5">Cleaning & Pest Control Tips</h2>
@@ -928,7 +846,7 @@ return (
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* FAQs */}
       <section className="py-24 bg-gray-100">

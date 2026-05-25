@@ -854,27 +854,27 @@ return (
         {
           name: "Cockroaches",
           image:
-            "cocroach.png",
+            "",
         },
         {
           name: "Mosquitoes",
           image:
-            "mosquito.png",
+            "https://images.unsplash.com/photo-1560807707-8cc77767d783?q=80&w=1200&auto=format&fit=crop",
         },
         {
           name: "Termites",
           image:
-            "termite.png",
+            "https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1200&auto=format&fit=crop",
         },
         {
           name: "Ants",
           image:
-            "ant.png",
+            "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1200&auto=format&fit=crop",
         },
         {
           name: "Rodents",
           image:
-            "rodent.png",
+            "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=1200&auto=format&fit=crop",
         },
       ].map((pest, index) => (
         <div
@@ -911,7 +911,7 @@ return (
       </section>
 
       {/* Blog */}
-      {/* <section className="py-24 bg-gray-100">
+      <section className="py-24 bg-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-green-700 mb-5">Cleaning & Pest Control Tips</h2>
@@ -928,7 +928,7 @@ return (
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* FAQs */}
       <section className="py-24 bg-gray-100">

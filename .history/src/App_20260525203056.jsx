@@ -874,7 +874,7 @@ return (
         {
           name: "Rodents",
           image:
-            "rodent.png",
+            "rodent",
         },
       ].map((pest, index) => (
         <div
@@ -911,7 +911,7 @@ return (
       </section>
 
       {/* Blog */}
-      {/* <section className="py-24 bg-gray-100">
+      <section className="py-24 bg-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-green-700 mb-5">Cleaning & Pest Control Tips</h2>
@@ -928,7 +928,7 @@ return (
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* FAQs */}
       <section className="py-24 bg-gray-100">
