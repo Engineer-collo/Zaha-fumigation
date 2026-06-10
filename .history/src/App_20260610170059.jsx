@@ -42,7 +42,7 @@ const ComingSoon = () => {
           </p>
 
           <div className="space-y-2 text-green-700 font-semibold">
-            <p>📞 0769095309</p>
+            <p>📞 +254 XXX XXX XXX</p>
             <p>📧 info@zahafumigation.com</p>
           </div>
         </div>
@@ -57,4 +57,4 @@ const ComingSoon = () => {
   );
 };
 
-export default ComingSoon;
+export default ComingSoon;y
